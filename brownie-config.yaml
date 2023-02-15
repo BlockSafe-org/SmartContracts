@@ -1,0 +1,26 @@
+dotenv: .env
+
+wallets:
+  test_key1: "${TEST_PRIVATE_KEY1}"
+  test_key2:  "${TEST_PRIVATE_KEY2}"
+
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.7.3
+  - smartcontractkit/chainlink-brownie-contracts@0.6.0
+
+compiler:
+  solc:
+    remappings:
+    - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.7.3"
+    - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.6.0"
+
+
+chains:
+  polygon-main:
+    
+  sepolia:
+    tetherAddress: "0xBD570632737c83dB5CfF1E4f4361552c5c7E2aAB"
+  polygon-test:
+    tetherAddress: "0xE097d6B3100777DC31B34dC2c58fB524C2e76921"
+
+  
